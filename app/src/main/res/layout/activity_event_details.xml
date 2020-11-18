@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp">
+
+    <ImageView
+        android:id="@+id/EventCardImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/add_img_default"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/EventNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event :"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/EventCardImage"/>
+
+    <TextView
+        android:id="@+id/EventNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EventCardImage"
+        android:layout_toRightOf="@id/organizerHeader"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="CESAsdvgdfcnojsnfni nsn isin ssin sisi sn "
+        />
+
+
+    <TextView
+        android:id="@+id/organizerHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organizer :"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/EventNameText"/>
+
+    <TextView
+        android:id="@+id/organizerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EventNameText"
+        android:layout_toRightOf="@id/organizerHeader"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="CESA"
+        />
+
+    <TextView
+        android:id="@+id/DateAndTimeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date And Time :"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/organizerText"/>
+
+    <TextView
+        android:id="@+id/DateAndTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/organizerText"
+        android:layout_toRightOf="@id/DateAndTimeHeader"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text=" 5 October 2020\n17:00"
+        />
+
+    <TextView
+        android:id="@+id/LinkHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link :"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@id/DateAndTimeText"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/LinkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinkHeader"
+        android:textColor="#000"
+        android:text="manutd.com"
+        android:layout_marginTop="5dp"
+        android:linksClickable="true"
+        android:autoLink="web"/>
+
+    <TextView
+        android:id="@+id/DescriptionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_below="@id/LinkText"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/DescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DescriptionHeader"
+        android:textColor="#000"
+        android:text="edivdmcimivoifioivdoisidoisnosvwcnisuvdiu manunited.com iuius iuisuibidusb iu bisub iuu sbiubiui"
+        android:layout_marginTop="5dp"
+        android:linksClickable="true"
+        android:autoLink="web"/>
+
+    </RelativeLayout>
+
+</ScrollView>

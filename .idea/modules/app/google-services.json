@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1004648931351",
+    "firebase_url": "https://moviesystem-5cb7d.firebaseio.com",
+    "project_id": "moviesystem-5cb7d",
+    "storage_bucket": "moviesystem-5cb7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004648931351:android:7b673a5f36cc928163bc52",
+        "android_client_info": {
+          "package_name": "com.example.vhackathonevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004648931351-c9rm68lmet1rr35cft5ms0dhdoifs432.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vhackathonevents",
+            "certificate_hash": "5cd6cbd03ef7af31ec2b41473217e182cd392718"
+          }
+        },
+        {
+          "client_id": "1004648931351-v4lkmgdmo76fkcb5qkdphvu54c6v3707.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAco_OQFzS6ByYippclA3EkSF3gA1Ljze8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004648931351-v4lkmgdmo76fkcb5qkdphvu54c6v3707.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

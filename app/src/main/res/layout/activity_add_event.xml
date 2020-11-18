@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/EventPoster"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/add_img_default"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/EventName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/EventPoster"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:hint="Even Name"
+        android:textSize="20sp"
+        android:gravity="center|start"
+        android:textColor="#000"
+        android:layout_marginHorizontal="40dp"
+        android:clickable="true"
+        android:background="@mipmap/events_category_optn"
+        android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/EventOrganizer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/EventName"
+            android:hint="Organizer Eg. CESA"
+            android:textSize="20sp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="2dp"
+            android:paddingBottom="5dp"
+            android:gravity="start|center"
+            android:textColor="#000"
+            android:layout_marginHorizontal="40dp"
+            android:clickable="true"
+            android:background="@mipmap/events_category_optn"
+            android:layout_marginTop="20dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/dateAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EventOrganizer"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="15dp">
+
+            <Button
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Time"/>
+
+            <Button
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EventsRegisterationLink"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/dateAndTime"
+            android:hint="Registeration Link..."
+            android:textSize="20sp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:gravity="start|center"
+            android:textColor="#000"
+            android:layout_marginHorizontal="40dp"
+            android:background="@mipmap/events_category_optn"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+        android:id="@+id/EventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EventsRegisterationLink"
+        android:background="@drawable/event_description"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Information..."
+        android:gravity="start"
+        android:textSize="20sp"
+         android:minLines="5"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/UploadEventBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EventDescription"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Publish Event"
+        android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>
